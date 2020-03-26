@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+#title{
+		margin-left: 10px;
+		font-size: 21px;
+		font-weight: bold;
+	}
+p{
+		text-indent: 22px;
+		letter-spacing: 0.5px;
+		font-size: 17px;
+		padding-bottom: 3px;
+}

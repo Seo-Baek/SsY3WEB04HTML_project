@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" href="../css/writing.css" >
+<script type="text/javascript">
+		function setopa(index){
+			if(index == "book1"){
+				let obj = document.getElementById("book1");
+				let obj2 = document.getElementById("book2");
+				let obj3 = document.getElementById("book3");
+				let sobj = document.getElementById("book1s");
+				let sobj2 = document.getElementById("book2s");
+				let sobj3 = document.getElementById("book3s");
+				obj.className = "clickedimg";
+				sobj.className = "clickeds";
+				
+				obj2.className = "book";
+				obj3.className = "book";
+				sobj2.className= "shadow";
+				sobj3.className= "shadow";
+			
+			} else if(index == "book2"){
+				let obj = document.getElementById("book2");
+				let obj2 = document.getElementById("book1");
+				let obj3 = document.getElementById("book3");
+				let sobj = document.getElementById("book2s");
+				let sobj2 = document.getElementById("book1s");
+				let sobj3 = document.getElementById("book3s");
+				obj.className = "clickedimg";
+				sobj.className = "clickeds";
+				
+				obj2.className = "book";
+				obj3.className = "book";
+				sobj2.className= "shadow";
+				sobj3.className= "shadow";
+			} else {
+				let obj = document.getElementById("book3");
+				let obj2 = document.getElementById("book1");
+				let obj3 = document.getElementById("book2");
+				let sobj = document.getElementById("book3s");
+				let sobj2 = document.getElementById("book1s");
+				let sobj3 = document.getElementById("book2s");
+				
+				obj.className = "clickedimg";
+				sobj.className = "clickeds";
+				
+				obj2.className = "book";
+				obj3.className = "book";
+				sobj2.className= "shadow";
+				sobj3.className= "shadow";
+			}
+			
+		}
+</script>
+</head>
+<body>
+	<article id="wri_a"> <!-- 본문 -->
+		<div class="picture_book">
+			<a href="book1.html" target="book" onclick='setopa("book1")'>
+			<img alt="" src="../images/book.PNG" width="150" height="200"
+			style="margin-right: 55px;" class="book" id="book1"></a>
+			<div class="shadow" style="margin-left: 30px;" id="book1s"></div>
+		</div>
+		<div class="picture_book">
+			<a href="book2.html" target="book"  onclick='setopa("book2")'>
+			<img alt="" src="../images/book3.PNG" width="150" height="200"
+			style="margin-right: 55px;" class="book" id ="book2"></a>
+			<div class="shadow" style="margin-left: 30px;" id="book2s"></div>
+		</div>
+		<div class="picture_book">
+			<a href="book3.html" target="book" onclick='setopa("book3")'>
+			<img alt="" src="../images/book2.png" width="150" height="200"
+			style="margin-right: 30px;" class="book" id="book3"></a>
+			<div class="shadow" style="margin-left: 30px;" id="book3s"></div>
+		</div>
+		<div class="list_book">
+			<fieldset name="book">
+			<legend>책 소개</legend>
+				<iframe src="" name="book" scrolling="auto" frameborder="0" width="640"></iframe>
+			</fieldset>
+		</div>
+	</article>
+	
+</body>
+</html>
